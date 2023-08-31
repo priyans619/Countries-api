@@ -34,6 +34,15 @@ export default function Header() {
           onClick={handleToggle}
           className={`${styles.cursorPointer} d-flex align-items-center mt-1`}
         >
+           {" "}
+          {!darkTheme ? (
+            <>
+              <BsMoon className="fs-6 fw-normal ms-auto me-1" />
+              <p className="fs-6 my-auto fw-bold">Dark Mode</p>
+            </>
+           )
+          }
+
           
         </motion.div>
       </Col>
