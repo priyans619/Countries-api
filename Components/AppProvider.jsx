@@ -1,6 +1,6 @@
 export default function AppProvider({children}) {
 
-    const [darkTheme] = useState(undefined);
+    const [darkTheme, setDarkTheme] = useState(undefined);
 
       useEffect(() => {
          if (darkTheme !== undefined) {
@@ -14,4 +14,14 @@ export default function AppProvider({children}) {
          }
        }, [darkTheme]);
 
+       useEffect(() => {
+         const root = window.document.documentElement;
+         const initialColorValue =
+           root.style.getPropertyValue("--initialColorMode");
+         setDarkTheme(initialColorValue === "dark");
+       }, []);
+
+       return (
+          <appContext.Provider value={{darkTheme, setDarkTheme}}>{children}</appContext.Provider>
+       )
 }
