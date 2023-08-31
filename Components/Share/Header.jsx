@@ -1,6 +1,8 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styles from "styles/index.module.scss";
+import { BsMoon } from "react-icons/bs";
+import { MdOutlineLightMode } from "react-icons/md";
 import { motion } from "framer-motion";
 import { useGlobalContext } from "../AppProvider";
 
