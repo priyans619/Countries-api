@@ -40,8 +40,13 @@ export default function Header() {
               <BsMoon className="fs-6 fw-normal ms-auto me-1" />
               <p className="fs-6 my-auto fw-bold">Dark Mode</p>
             </>
-           )
-          }
+           ) :
+           (
+            <>
+              <MdOutlineLightMode className="fs-6 fw-normal ms-auto me-1" />
+              <p className="fs-6 my-auto fw-bold">Light Mode</p>
+            </>
+          )}
 
           
         </motion.div>
