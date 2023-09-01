@@ -1,6 +1,8 @@
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import { v4 as uuidv4 } from "uuid";
 import { useRouter } from "next/router";
+import styles from 'styles/index.module.scss';
 
 
 
@@ -16,7 +18,7 @@ export default function Countries({countries}) {
     <Row className={`${styles.countriesRow} mt-4 g-4`}>
       {countries.map((country) => {
         const id = uuidv4();
-        let { flags, cca3, name, population } = country;
+        let { flags, cca3, name, population,region, capital } = country;
         let {common} = name;
 
         return (
@@ -71,6 +73,27 @@ export default function Countries({countries}) {
                 >
                   Population:{" "}
                   <span className="fs-6 country-value">{population}</span>
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 1.1 }}
+                  viewport={{ once: true }}
+                  className="country-key fs-7 fw-bold"
+                >
+                  Region: <span className="fs-6 country-value">{region}</span>
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 1.3 }}
+                  viewport={{ once: true }}
+                  className="country-key fs-7 fw-bold"
+                >
+                  Capital:{" "}
+                  <span className="fs-6 country-value">
+                    {capital ? capital[0] : "No capital"}
+                  </span>
                 </motion.p>
                 
               </div>
