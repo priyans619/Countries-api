@@ -22,4 +22,32 @@ class MyDocument extends Document {
     );
   }
 }
+
+const themeInitializerScript = `(function() {
+	${setInitialColorMode.toString()}
+	setInitialColorMode();
+})()
+`;
+
+function setInitialColorMode() {
+  
+  function getInitialColorMode() {
+    const persistedPreferenceMode = window.localStorage.getItem("theme");
+    const hasPersistedPreference = typeof persistedPreferenceMode === "string";
+
+    if (hasPersistedPreference) {
+      return persistedPreferenceMode;
+    }
+
+    const preference = window.matchMedia("(prefers-color-scheme: dark)");
+    const hasMediaQueryPreference = typeof preference.matches === "boolean";
+
+    if (hasMediaQueryPreference) {
+      return preference.matches ? "dark" : "light";
+    }
+
+    return "light";
+  }
+}
+
 export default MyDocument;
