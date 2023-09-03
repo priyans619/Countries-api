@@ -10,7 +10,11 @@ class MyDocument extends Document {
      rel="stylesheet"
    />;
         <body>
-          
+        <script
+            dangerouslySetInnerHTML={{
+              __html: themeInitializerScript,
+            }}
+          ></script>
           <Main />
           <NextScript />
         </body>
