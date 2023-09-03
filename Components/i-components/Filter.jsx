@@ -1,3 +1,4 @@
+import Dropdown from "react-bootstrap/Dropdown";
 import {v4 as uuidv4} from 'uuid';
 import styles from 'styles/index.module.scss'
 import { motion } from "framer-motion";
@@ -36,11 +37,24 @@ export default function Filter({regions, controlCountries}) {
             let delayValue = 0.1 //delay interval of 0.1
             delayValue = delayValue * (index + 1) // increase as index increase
             const id = uuidv4();
+            return (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: `${delayValue}` }}
+                key={id}
+              >
+                <Dropdown.Item 
+                className='item'
+                onClick={() => filteredCountry(region)}>
+                  {region}
+                </Dropdown.Item>
+              </motion.div>
+            )
             
           })}
         </Dropdown.Menu>
-        
-              </Dropdown>
-            </motion.div>
-          )
+    </Dropdown>
+ </motion.div>
+ )
 }
