@@ -1,3 +1,8 @@
+import {v4 as uuidv4} from 'uuid';
+import styles from 'styles/index.module.scss'
+import { motion } from "framer-motion";
+
+
 export default function Filter({regions, controlCountries}) {
 
     let { data, setCountries } = controlCountries;
@@ -25,6 +30,15 @@ export default function Filter({regions, controlCountries}) {
                 >
                   Filter by Region
                 </Dropdown.Toggle>
+
+                <Dropdown.Menu className={`${styles.dropdownMenu} menu shadow-sm`}>
+          { regions.map((region, index) => {
+            let delayValue = 0.1 //delay interval of 0.1
+            delayValue = delayValue * (index + 1) // increase as index increase
+            const id = uuidv4();
+            
+          })}
+        </Dropdown.Menu>
         
               </Dropdown>
             </motion.div>
