@@ -48,6 +48,9 @@ function setInitialColorMode() {
 
     return "light";
   }
+  const currentColorMode = getInitialColorMode();
+  const element = document.documentElement;
+  element.style.setProperty("--initial-color-mode", currentColorMode);
 }
 
 export default MyDocument;
