@@ -5,5 +5,20 @@ export default function BorderCountries({borderCountries}) {
     const router = useRouter();
     const { borders } = borderCountries;
 
-    return ()
+    return (
+        
+    
+  <div className="pt-4">
+    <motion.p
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 4.4 }}
+      className={`${
+        borders && "d-flex flex-wrap align-items-center"
+      } country-key fs-7 fw-bold`}
+    >
+    </motion.p>
+  </div>
+    );
+
 }
