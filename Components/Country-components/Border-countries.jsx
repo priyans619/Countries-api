@@ -17,7 +17,15 @@ export default function BorderCountries({borderCountries}) {
         borders && "d-flex flex-wrap align-items-center"
       } country-key fs-7 fw-bold`}
     >
+       {borders ? (
+            borders.map((border, index) => {
+              const id = uuidv4();
+              let delayValue = 4.4;
+              index = index + 1; 
+              delayValue = delayValue + 0.3 * index; 
+            }  
     </motion.p>
+    
   </div>
     );
 
