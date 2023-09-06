@@ -23,6 +23,18 @@ export default function BorderCountries({borderCountries}) {
               let delayValue = 4.4;
               index = index + 1; 
               delayValue = delayValue + 0.3 * index; 
+            
+              return (
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  whileTap={{ scale: 1.3 }}
+                  transition={{ duration: 0.5, delay: `${delayValue}` }}
+                  
+                >
+                  {border}
+                </motion.span>
+              );   
             }  
     </motion.p>
     
