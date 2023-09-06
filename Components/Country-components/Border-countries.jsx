@@ -30,7 +30,9 @@ export default function BorderCountries({borderCountries}) {
                   animate={{ opacity: 1 }}
                   whileTap={{ scale: 1.3 }}
                   transition={{ duration: 0.5, delay: `${delayValue}` }}
-                  
+                  key={id}
+                  onClick={() => router.push(`/${border}`)}
+                  className={`${styles.cursorPointer} inline-block rounded fs-6 country-value border px-2 py-1 shadow-sm ms-1 my-1`}
                 >
                   {border}
                 </motion.span>
