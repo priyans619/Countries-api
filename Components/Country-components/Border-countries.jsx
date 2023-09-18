@@ -43,7 +43,7 @@ export default function BorderCountries({borderCountries}) {
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0, delay: 0 }}
+            transition={{ duration: 0.5, delay: 2.1}}
             className="country-value fs-6 text-light-blue ms-1 fw-bold"
           >
             None
