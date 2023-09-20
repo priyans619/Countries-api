@@ -13,7 +13,9 @@ export default function DetailsOne({detailsOne}) {
           transition={{ duration: 0.5, delay: 2.0 }}
           className="country-key fs-7 fw-bold"
         >
-            
+            <span className="fs-4 country-value">
+            {nativeName ? nativeName : "No Native Name"}
+            </span>
         </motion.p>
         
 
