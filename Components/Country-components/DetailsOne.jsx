@@ -18,6 +18,10 @@ export default function DetailsOne({detailsOne}) {
             {nativeName ? nativeName : "No Native Name"}
             </span>
         </motion.p>
+
+        <motion.p>
+            Population:
+        </motion.p>
         
 
 
