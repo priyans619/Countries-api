@@ -19,7 +19,10 @@ export default function DetailsOne({detailsOne}) {
             </span>
         </motion.p>
 
-        <motion.p>
+        <motion.p
+           initial={{ opacity: 0 }}
+           animate={{ opacity: 1 }}
+        >
             Population:
         </motion.p>
         
