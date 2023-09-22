@@ -22,6 +22,8 @@ export default function DetailsOne({detailsOne}) {
         <motion.p
            initial={{ opacity: 0 }}
            animate={{ opacity: 1 }}
+           transition={{ duration: 0.5, delay: 2.6 }}
+           className="country-key fs-7 fw-bold"
         >
             Population:
         </motion.p>
