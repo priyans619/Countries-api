@@ -37,6 +37,10 @@ export default function DetailsOne({detailsOne}) {
           Region: <span className="fs-6 country-value">{region}</span>
         </motion.p>
 
+        Sub Region:{" "}
+          <span className="fs-6 country-value">
+          </span>
+
 
 
 
