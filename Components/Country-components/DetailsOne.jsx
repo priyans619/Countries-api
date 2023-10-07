@@ -25,7 +25,7 @@ export default function DetailsOne({detailsOne}) {
            transition={{ duration: 0.5, delay: 2.6 }}
            className="country-key fs-7 fw-bold"
         >
-            Population:
+            Population: <span className="fs-6 country-value">{region}</span>
         </motion.p>
         
         <motion.p
