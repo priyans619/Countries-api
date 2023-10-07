@@ -39,6 +39,7 @@ export default function DetailsOne({detailsOne}) {
 
         Sub Region:{" "}
           <span className="fs-6 country-value">
+          {subregion ? subregion : "No Sub Region"}
           </span>
 
 
