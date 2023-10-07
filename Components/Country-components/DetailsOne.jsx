@@ -30,8 +30,8 @@ export default function DetailsOne({detailsOne}) {
         
         <motion.p
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0 }}
-          transition={{ duration: 1, delay: 2}}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 2}}
           className="country-key fs-7 fw-bold"
         >
           Region: <span className="fs-6 country-value">{region}</span>
