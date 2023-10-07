@@ -28,6 +28,15 @@ export default function DetailsOne({detailsOne}) {
             Population:
         </motion.p>
         
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0 }}
+          transition={{ duration: 1, delay: 2}}
+          className="country-key fs-7 fw-bold"
+        >
+          Region: <span className="fs-6 country-value">{region}</span>
+        </motion.p>
+
 
 
 
