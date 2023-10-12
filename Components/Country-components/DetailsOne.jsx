@@ -48,6 +48,11 @@ export default function DetailsOne({detailsOne}) {
             {subregion ? subregion : "No Sub Region"}
           </span>
         </motion.p>
+
+        Capital:{" "}
+          <span className="">
+            {capital ? capital[0] : "No Capital"}
+          </span>
         
 
 
