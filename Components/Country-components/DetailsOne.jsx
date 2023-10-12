@@ -50,7 +50,7 @@ export default function DetailsOne({detailsOne}) {
         </motion.p>
 
         Capital:{" "}
-          <span className="">
+          <span className="fs-6 country-value">
             {capital ? capital[0] : "No Capital"}
           </span>
         
