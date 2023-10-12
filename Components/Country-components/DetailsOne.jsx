@@ -48,7 +48,13 @@ export default function DetailsOne({detailsOne}) {
             {subregion ? subregion : "No Sub Region"}
           </span>
         </motion.p>
+        
+        <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        >
 
+        </motion.p>
         Capital:{" "}
           <span className="fs-6 country-value">
             {capital ? capital[0] : "No Capital"}
