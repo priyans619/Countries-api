@@ -8,11 +8,15 @@ export default function DetailsTwo({detailsTwo}) {
 
     return(
         <col md={6} className={`${style.descCol2} pt-5`}>
-        <motion.p>
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 3.5 }}
-          className="country-key fs-7 fw-bold"
+        <motion.p
+         initial={{ opacity: 0 }}
+         animate={{ opacity: 1 }}
+         transition={{ duration: 0.5, delay: 3.5 }}
+         className="country-key fs-7 fw-bold"
+         >
+            Top Level Domain:{" "}
+          <span className="fs-6 country-value">{tld?.[0]}</span>
+          
         </motion.p>
        
        
