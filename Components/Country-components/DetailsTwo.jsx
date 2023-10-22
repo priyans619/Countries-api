@@ -27,7 +27,7 @@ export default function DetailsTwo({detailsTwo}) {
         >
            Currencies:{" "}
            <span className="fs-6 country-value">
-            {currencies ? currencies : ""}
+            {currencies ? currencies : "No Currencies"}
           </span>
           
         </motion.p>
