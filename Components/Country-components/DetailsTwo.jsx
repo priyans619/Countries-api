@@ -22,7 +22,7 @@ export default function DetailsTwo({detailsTwo}) {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 3.0 }}
+          transition={{ duration: 0.5, delay: 3.8 }}
           className="country-key fs-7 fw-bold"
         >
           
