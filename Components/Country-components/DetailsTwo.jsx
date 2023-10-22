@@ -26,6 +26,9 @@ export default function DetailsTwo({detailsTwo}) {
           className="country-key fs-7 fw-bold"
         >
            Currencies:{" "}
+           <span className="fs-6 country-value">
+            {currencies ? currencies : ""}
+          </span>
           
         </motion.p>
        
