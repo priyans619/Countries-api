@@ -25,6 +25,7 @@ export default function DetailsTwo({detailsTwo}) {
           transition={{ duration: 0.5, delay: 3.8 }}
           className="country-key fs-7 fw-bold"
         >
+           Currencies:{" "}
           
         </motion.p>
        
