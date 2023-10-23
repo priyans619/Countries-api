@@ -31,6 +31,10 @@ export default function DetailsTwo({detailsTwo}) {
           </span>
           
         </motion.p>
+
+        <motion.p>
+        Languages:{" "}
+        </motion.p>
        
         </col>
     );
