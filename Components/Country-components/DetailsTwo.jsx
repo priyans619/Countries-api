@@ -40,6 +40,18 @@ export default function DetailsTwo({detailsTwo}) {
         >
 
         Languages:{" "}
+
+        <span className="fs-6 countrt-value">
+
+          {
+            languages && languages.isArray
+            ? 
+              (languages.length > 0)
+              ? languages.join(", ")
+              : languages.join("")
+            : "No Languages" }
+
+        </span>
         </motion.p>
        
         </col>
